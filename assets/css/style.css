@@ -1,0 +1,376 @@
+/* youtube.css */
+.youtube-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%; /* Breite des Containers */
+    max-width: 600px; /* Maximale Breite des Containers */
+    margin: 20px auto; /* Zentriert den Container und fügt vertikalen Abstand hinzu */
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.youtube-container input[type="text"] {
+    width: 80%; /* Breite des Eingabefelds */
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333; /* Textfarbe */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.youtube-container input[type="text"]:focus {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.youtube-container button {
+    width: 80%; /* Breite des Buttons */
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Hintergrundfarbe des Buttons */
+    color: white; /* Textfarbe des Buttons */
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.youtube-container button:hover {
+    background-color: #45a049; /* Hintergrundfarbe des Buttons beim Hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.youtube-container #player {
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+ul, ol {
+    margin: 20px auto;
+    padding-left: 0;
+    text-align: left; /* Zentriert die Listenpunkte */
+    display: inline-block; /* Macht die Listenpunkte inline-block, um sie zu zentrieren */
+}
+
+.content h2 {
+    text-align: center;
+}
+
+.content ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.content ul li {
+    display: inline-block;
+    text-align: left;
+    margin: 5px 0;
+}
+
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    background-image: url("../img/Background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding-top: 110px; /* Erhöht den Abstand zwischen der Navbar und dem Text */
+}
+
+footer {
+    background-color: #000000;
+    color: rgb(252, 252, 252);
+    text-align: center;
+    padding: 5px; /* Verkleinert das Padding */
+    font-size: 14px; /* Vergrößert die Schriftgröße */
+    height: 40px; /* Setzt die Höhe des Footers */
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    align-items: center; /* Zentriert den Inhalt vertikal */
+    justify-content: center; /* Zentriert den Inhalt horizontal */
+    margin-top: auto; /* Schiebt den Footer an das Ende der Seite */
+}
+
+/* register.css */
+.register-container,
+.login-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px; /* Breite des Containers */
+    margin: 20px auto; /* Zentriert den Container und fügt vertikalen Abstand hinzu */
+    color: rgb(255, 255, 255);
+}
+
+.register-container input[type="text"],
+.register-container input[type="email"],
+.register-container input[type="password"],
+.register-container input[type="date"],
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: 70%; /* Breite der Eingabefelder */
+    padding: 17px;
+    margin: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.register-container button,
+.login-container button {
+    width: 70%; /* Breite des Buttons */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Übergangseffekt für Hover */
+}
+
+.register-container button:hover,
+.login-container button:hover {
+    background-color: #e0e0e0; /* Hintergrundfarbe des Buttons beim Hover */
+    color: black; /* Textfarbe des Buttons beim Hover */
+}
+
+/* navbar.css */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 22px; /* Abstand zwischen den Links */
+    background-color: #0000007c; /* Hintergrundfarbe des Navigationsbereichs */
+    padding: 10px 20px; /* Vergrößert den Innenabstand des Navigationsbereichs */
+    position: fixed; /* Fixiert die Navbar oben */
+    top: 0; /* Positioniert die Navbar oben */
+    left: 50%; /* Positioniert die Navbar horizontal in der Mitte */
+    transform: translateX(-50%); /* Verschiebt die Navbar um die Hälfte ihrer Breite nach links */
+    width: auto; /* Breite des Navigationsbereichs auf automatische Größe setzen */
+    z-index: 1000;
+    border-radius: 50px; /* Abrundung der Ecken */
+    transition: top 0.3s; /* Übergangseffekt für das Ein- und Ausblenden */
+}
+
+nav.hidden {
+    top: -100px; /* Versteckt die Navbar */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: white; /* Farbe für normale Links */
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    color: #441bd8; /* Farbe der Links beim Hover */
+}
+
+/* login.css */
+.login-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px; /* Verkleinert das Padding */
+    border-radius: 10px;
+    width: 400px; /* Verkleinert die Breite des Containers */
+    margin: 20px auto; /* Zentriert den Container und fügt vertikalen Abstand hinzu */
+    color: white;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: 70%; /* Vergrößert die Breite der Eingabefelder */
+    padding: 17px; /* Verkleinert das Padding */
+    margin: 8px; /* Verkleinert den Abstand */
+    border: none;
+    border-radius: 5px;
+    background-color: white; /* Hintergrundfarbe der Eingabefelder */
+    color: black; /* Textfarbe der Eingabefelder */
+}
+
+.login-container button {
+    width: 70%; /* Vergrößert die Breite des Buttons */
+    padding: 10px; /* Beibehaltung des Paddings */
+    margin: 8px; /* Verkleinert den Abstand */
+    border: none;
+    border-radius: 5px;
+    background-color: white; /* Hintergrundfarbe des Buttons */
+    color: black; /* Textfarbe des Buttons */
+    font-size: 18px; /* Verkleinert die Schriftgröße */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Übergangseffekt für Hover */
+}
+
+.login-container button:hover {
+    background-color: #e0e0e0; /* Hintergrundfarbe des Buttons beim Hover */
+    color: black; /* Textfarbe des Buttons beim Hover */
+}
+
+/* index.css */
+.index-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.index-text a {
+    color: #ddec06; /* Goldene Farbe für die Links */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+    transition: color 0.3s; /* Übergangseffekt für die Farbänderung */
+}
+
+.index-text a:hover {
+    color: #fcfcfc; /* Orange Farbe beim Hover */
+    text-decoration: underline; /* Unterstreicht die Links beim Hover */
+}
+
+.index-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.index-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.index-text p {
+    margin: 10px 0;
+}
+
+.index-text h3 {
+    margin-top: 20px;
+}
+
+.index-text ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.index-text ul li {
+    margin: 5px 0;
+}
+
+/* about.css */
+.about-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.about-text a {
+    color: #ddec06; /* Goldene Farbe für die Links */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+    transition: color 0.3s; /* Übergangseffekt für die Farbänderung */
+}
+
+.about-text a:hover {
+    color: #fcfcfc; /* Orange Farbe beim Hover */
+    text-decoration: underline; /* Unterstreicht die Links beim Hover */
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-text p {
+    margin: 10px 0;
+}
+
+.about-text h3 {
+    margin-top: 20px;
+}
+
+.about-text ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.about-text ul li {
+    margin: 5px 0;
+}
+
+.content {
+    flex: 1;
+}
+
+.Hobby {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* work.css */
+.content-work {
+    margin: 20px auto; /* Vergrößert den Abstand zur Überschrift */
+    max-width: 800px;
+    text-align: center; /* Zentriert den Text */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
